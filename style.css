@@ -232,7 +232,12 @@ body{
 
 /* Portfolio */
 
-.portfolio-photo{
+.portfolio-photo-top{
+  margin-top:150px;
+  width:600px;
+}
+
+.portfolio-photo-under{
   margin-top:50px;
-  width:300px;
+  width:600px;
 }
