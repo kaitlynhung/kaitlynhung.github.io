@@ -1,0 +1,238 @@
+/* index */
+
+body{
+  font-family:sans-serif;
+  background-color:rgb(248,249,250);
+}
+
+.linkunchanged:link{
+  color:white;
+  text-decoration:none;
+}
+
+.linkunchanged:hover{
+  color:white;
+}
+
+.linkunchanged:visited{
+  color:white
+}
+
+.navbarbgtheme{
+  background-color:rgb(33,46,76)
+}
+
+.idphoto{
+  margin-top:125px;
+  width:200px;
+}
+
+.content-link:link{
+  color:black;
+}
+
+.content-link:hover{
+  color:rgb(80,80,80);
+  text-decoration:underline;
+}
+
+.content-link:visited{
+  color:black
+}
+
+.linkedin-icon{
+  width:30px;
+}
+
+/* Qualification */
+
+.textshadow{
+  text-shadow:3px 3px #e6e6e6;
+}
+
+.qualification-photo{
+  margin-top:150px;
+  width:300px;
+}
+
+.qualitfication-list{
+  list-style-position:inside;
+}
+
+/* Education */
+
+.split{
+  height:100%;
+  width:50%;
+  position:fixed;
+  z-index:1;
+  top:0;
+  overflow-x:hidden;
+  padding-top:20px;
+}
+
+.left{
+  left:0;
+  background-image:url("Education/NTUST-bg(0.3).png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:40% bottom;
+}
+
+.left:hover{
+  background-image:url("Education/NTUST-bg(0.45).png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:40% bottom;
+}
+
+.right{
+  right:0;
+  background-image:url("Education/ESCE-bg(0.3).png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:40% top;
+}
+
+.right:hover{
+  background-image:url("Education/ESCE-bg(0.45).png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:40% top;
+
+}
+
+.centered{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+}
+
+/* Work Experience */
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timelinebox {
+  padding: 50px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timelinebox::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: black;
+  border: 4px solid #FF9F55;
+  top: 70px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timelinebox-left {
+  left: 0;
+}
+
+.timelinebox-right {
+  left: 50%;
+}
+
+.timelinebox-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 72px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+
+.timelinebox-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 72px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.timelinebox-right::after {
+  left: -13px;
+}
+
+.timelinebox-content {
+  padding: 20px 30px 10px 30px;
+  background-color: black;
+  position: relative;
+  border-radius: 6px;
+  color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timelinebox {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timelinebox::before {
+    left: 60px;
+    border: medium solid black;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent;
+  }
+
+  .timelinebox-left::after, .timelinebox-right::after {
+    left: 15px;
+  }
+
+  .timelinebox-right {
+    left: 0%;
+  }
+}
+
+.work-description{
+  padding-left:15px;
+}
+
+/* Portfolio */
+
+.portfolio-photo{
+  margin-top:50px;
+  width:300px;
+}

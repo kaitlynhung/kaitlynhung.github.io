@@ -1,0 +1,131 @@
+.page{
+  position:relative;
+  width:210mm;
+  min-height:297mm;
+  padding:3mm 20mm;
+  margin:10mm auto;
+  border:5px rgb(183, 188, 200) double;
+  color:white;
+}
+
+.page:before{
+  content:" ";
+  position:absolute;
+  z-index:-1;
+  top:5px;
+  left:5px;
+  right:5px;
+  bottom:5px;
+  border:3px rgb(183, 188, 200) solid;
+}
+
+body{
+  font-family:"Times New Roman", Times, serif;
+  text-align:center;
+  background-color:rgb(40,44,52)
+}
+
+h1{
+ font-size:65px;
+ line-height:30px;
+ margin-top:60px;
+}
+
+b{
+  font-size:24px;
+}
+
+h3{
+  font-size:35px;
+  height:15px;
+}
+
+.idphoto{
+  width:150px;
+  border:1px rgb(183, 188, 200) solid;
+  border-radius:5px;
+  display:inline-block;
+  position:relative;
+  top:37px;
+  right:10px;
+}
+
+.info{
+  font-size:22px;
+  line-height:20px;
+  display:inline-block;
+  border-left:5px rgb(183,188,200) double;
+  padding:12px;
+}
+
+.qualification{
+  text-align:left;
+  padding:0px 30px;
+  font-size:23px;
+  line-height:30px;
+  list-style-type:square;
+}
+
+.schoollist{
+  float:left;
+  font-size:22px;
+  }
+
+.schooltime{
+  float:right;
+  font-size:22px;
+}
+
+.experience{
+text-align:left;
+padding:0px 30px;
+font-size:20px;
+line-height:20px;
+list-style-type:square;
+}
+
+a:link{
+  color:white;
+  text-decoration:none;
+}
+
+a:visited{
+  color:white;
+}
+
+a:hover{
+  color:orange;
+}
+
+.pagebutton{
+  text-decoration:none;
+  display:inline-block;
+  padding:4px 16px;
+  color:black !important;
+  font-size:23px;
+  background-color:#ddd;
+  border-radius:15px;
+  }
+
+  a.pagebutton:hover{
+  color:orange!important;
+  }
+
+@media print{
+  .no-print, .no-print *
+  {
+    display:none !important;
+  }
+}
+
+.portfolio{
+  font-size:30px;
+  list-style-position:inside;
+  list-style-type:none;
+}
+
+.ticketcoupon{
+  width:150px;
+  border:1px rgb(183, 188, 200) solid;
+  border-radius:5px;
+}
